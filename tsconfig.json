@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
     "baseUrl": "./src",
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
     "paths": {
       "@/*": ["*"],
       "@config/*": ["config/*"],
@@ -18,7 +19,9 @@
       "@services/*": ["services/*"],
       "@utils/*": ["utils/*"],
       "@middlewares/*": ["middlewares/*"]
-    }
+    },
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node", "express", "cors"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
