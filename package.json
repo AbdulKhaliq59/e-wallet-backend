@@ -4,7 +4,7 @@
   "description": "Wallet Application Backend",
   "main": "src/app.ts",
   "scripts": {
-    "start": "node -r module-alias/register dist/app.js",
+    "start": "node dist/app.js",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only src/app.ts",
     "build": "tsc && tsc-alias",
     "lint": "eslint . --ext .ts",

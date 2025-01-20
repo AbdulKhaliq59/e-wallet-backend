@@ -19,9 +19,7 @@
       "@services/*": ["services/*"],
       "@utils/*": ["utils/*"],
       "@middlewares/*": ["middlewares/*"]
-    },
-    "typeRoots": ["./node_modules/@types"],
-    "types": ["node", "express", "cors"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
