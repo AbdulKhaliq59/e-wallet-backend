@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/app.js",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only src/app.ts",
-    "build": "rm -rf dist && tsc",
+    "build": "rm -rf dist && tsc && tsc-alias",
     "lint": "eslint . --ext .ts",
     "test": "jest",
     "typecheck": "tsc --noEmit"
